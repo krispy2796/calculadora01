@@ -1,0 +1,53 @@
+  h1 {
+    color: blue;
+    text-align: center;
+  }
+  p {
+      color: blue;
+      text-align: center;
+  }
+
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: lightseagreen;
+}
+
+.calculadora-cristian{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculadora-cristian > button {
+     cursor: pointer;
+     font-size: 2ren;
+     border: 1xp solid white;
+     outline: none;
+     background-color: rgba(225, 255, 255, .75);
+
+
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+}
